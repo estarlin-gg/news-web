@@ -4,7 +4,7 @@ export const Select = () => {
   const { HandleCategory, category } = useNews();
   return (
     <>
-      <label htmlFor="select" className="text-white font-medium text-lg">
+      <label htmlFor="select" className="text-white font-medium text-lg sm:text-xl">
         Categories
       </label>
       <select
