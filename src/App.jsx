@@ -1,11 +1,8 @@
-import "./App.css";
 import { Header } from "./components/Header";
 import { NewsProvider } from "./context/NewsProvider";
 import { NewsContainer } from "./components/NewsContainer";
 
-
 function App() {
-  
   return (
     <>
       <NewsProvider>

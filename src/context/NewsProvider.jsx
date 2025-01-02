@@ -10,9 +10,11 @@ export const NewsProvider = ({ children }) => {
 
   useEffect(() => {
     const CallApi = async () => {
-      const key = "51e418b737dc4030a9da5e4c04f2de1a";
-      const URL = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${key}`;
+      const URL = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${
+        import.meta.env.VITE_API_KEY
+      }`;
       const { data } = await axios(URL);
+      console.log(data);
       setNews(data.articles);
     };
 
